@@ -8,12 +8,14 @@
   background-image: url(../images/header_bg.png), url(../images/developer.png);
   background-repeat: no-repeat;
   background-position: bottom right, left;
+  background-size: contain;
+  padding: 20px 0;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  margin: 50px 200px;
+  padding: 50px 200px;
 }
 .nav-title {
   font-weight: 800;
@@ -60,6 +62,10 @@ ul li a {
   font-size: 20px;
 }
 
+.btn-contact-me {
+  margin-left: 15px;
+}
+
 /* banner styles */
 .banner-container {
   display: flex;
@@ -68,8 +74,9 @@ ul li a {
 }
 
 .img-rayhan {
-  height: 300px;
-  width: 320px;
+  height: 400px;
+  width: 250px;
+  margin-bottom: -20px;
 }
 
 .banner-h2 {
@@ -93,4 +100,206 @@ ul li a {
   color: #757575;
   /* width: 580px; */
   margin-bottom: 25px;
+}
+
+/* main section */
+main {
+  max-width: 940px;
+  margin: 0 auto;
+}
+/* about section start */
+.about {
+  margin-top: 100px;
+  padding: 100px 110px;
+  background-color: #fff8f3;
+  text-align: center;
+}
+
+.section-title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.section-description {
+  color: #757575;
+  margin-bottom: 30px;
+}
+
+.about-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about-p-title {
+  color: #757575;
+}
+
+.about-p-title2 {
+  font-weight: 600;
+}
+
+/* what i do section start */
+.what-i-do {
+  margin-top: 130px;
+  text-align: center;
+}
+
+.what-i-do-p {
+  color: #757575;
+  margin-bottom: 50px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card {
+  margin-left: 10px;
+  padding: 40px 15px;
+  /* border: 1px #757575 solid; */
+  background: #ffffff;
+  box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  width: 267px;
+  height: 270px;
+}
+.card-image {
+  margin-bottom: 25px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.card-description {
+  color: #757575;
+  font-size: 14px;
+}
+
+/* A summary of My Resume */
+
+.resume-summry {
+  margin-top: 130px;
+
+  text-align: start;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.resume-card {
+  display: flex;
+}
+
+.resume-card-child {
+  padding: 0 40px;
+}
+.resume-h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 800;
+  color: #474747;
+}
+
+.resume-h4 {
+  font-size: 16px;
+  margin-bottom: 05px;
+  font-weight: 800;
+  color: #474747;
+}
+
+.resume-p1 {
+  font-size: 12px;
+  margin-bottom: 9px;
+  font-weight: 800;
+  color: #757575;
+}
+hr {
+  color: #757575;
+  margin-bottom: 20px;
+}
+
+.resume-p2 {
+  font-size: 10px;
+  margin-bottom: 9px;
+  font-weight: 800;
+  color: #757575;
+}
+.resume-btn {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+/* footer */
+.footer {
+  margin-top: 113px;
+  background-color: #fff8f3;
+  height: 550px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.left-footer {
+  text-align: start;
+  padding-left: 50px;
+}
+
+/* .left-footer {
+  text-align: start;
+  padding-left: 230px;
+}
+.right-footer {
+  text-align: start;
+  padding-left: 230px;
+} */
+.footer-h3 {
+  margin-top: 100px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.footer-p {
+  color: #474747;
+  font-size: 14px;
+  padding: 10px 80px 10px 0;
+}
+
+.footer-form-input {
+  display: block;
+  width: 461px;
+  height: 64px;
+  margin: 15px 50px 15px 0;
+  text-align: start;
+  border: none;
+  padding-left: 30px;
+}
+
+.footer-form-input::placeholder {
+  color: #757575;
+  padding-left: 30px;
+  font-size: 14px;
+}
+
+textarea {
+  border: none;
+  width: 461px;
+  height: 114px;
+  padding-left: 30px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+textarea::placeholder {
+  color: #757575;
+  padding-left: 30px;
+  padding-top: 20px;
+  font-size: 14px;
 }
