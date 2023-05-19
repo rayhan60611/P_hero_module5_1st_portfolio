@@ -3,3 +3,17 @@
   padding: 0;
   font-family: "Open Sans", sans-serif;
 }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 56px 200px;
+}
+.nav-title {
+  font-weight: 800;
+  font-size: 45px;
+}
+
+.nav-title-span {
+    color: #FD6E0A;co
+}
