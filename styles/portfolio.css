@@ -5,13 +5,15 @@
 }
 .header {
   background: #fff8f3;
+  background-image: url(../images/header_bg.png), url(../images/developer.png);
+  background-repeat: no-repeat;
+  background-position: bottom right, left;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   margin: 50px 200px;
-  align-items: center;
 }
 .nav-title {
   font-weight: 800;
@@ -62,10 +64,7 @@ ul li a {
 .banner-container {
   display: flex;
   align-items: center;
-}
-
-.banner-left {
-  margin-left: 200px;
+  margin: 0 200px;
 }
 
 .img-rayhan {
@@ -92,6 +91,6 @@ ul li a {
   font-size: 14px;
   line-height: 30px;
   color: #757575;
-  width: 580px;
+  /* width: 580px; */
   margin-bottom: 25px;
 }
