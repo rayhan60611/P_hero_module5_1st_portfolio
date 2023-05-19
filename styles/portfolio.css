@@ -8,6 +8,7 @@ nav {
   display: flex;
   justify-content: space-between;
   margin: 56px 200px;
+  align-items: center;
 }
 .nav-title {
   font-weight: 800;
@@ -15,5 +16,31 @@ nav {
 }
 
 .nav-title-span {
-    color: #FD6E0A;co
+  color: #fd6e0a;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul li {
+  list-style: none;
+  margin-left: 50px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #474747;
+  font-size: 20px;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background: #fd6e0a;
+  border-radius: 5px;
+  border: 0;
+  padding: 12px 30px;
+  font-weight: 700;
+  font-size: 20px;
 }
