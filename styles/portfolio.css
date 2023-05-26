@@ -303,3 +303,32 @@ textarea::placeholder {
   padding-top: 20px;
   font-size: 14px;
 }
+
+/* hide class */
+
+.hide {
+  display: none;
+}
+/* what i do media query */
+@media screen and (max-width: 576px) {
+  .card-container {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .what-i-do-p {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .card-container {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
