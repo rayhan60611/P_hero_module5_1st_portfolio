@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 .header {
   background: #fff8f3;
@@ -242,7 +245,8 @@ hr {
 .footer {
   margin-top: 113px;
   background-color: #fff8f3;
-  height: 550px;
+  /* height: 550px; */
+
   display: flex;
   justify-content: space-evenly;
 }
@@ -304,6 +308,10 @@ textarea::placeholder {
   font-size: 14px;
 }
 
+.footer-btn {
+  margin-bottom: 40px;
+}
+
 /* hide class */
 
 .hide {
@@ -330,5 +338,74 @@ textarea::placeholder {
     gap: 20px;
     justify-content: space-around;
     align-items: center;
+  }
+}
+
+/* resume section media query*/
+
+@media screen and (max-width: 576px) {
+  .resume-card {
+    flex-direction: column;
+  }
+}
+
+/* footer section media query*/
+
+@media screen and (max-width: 750px) {
+  .footer {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .right-footer {
+    padding: 0 70px;
+  }
+
+  .footer-form-input {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+}
+
+/* about section media query*/
+
+@media screen and (max-width: 576px) {
+  .about {
+    margin-top: 100px;
+    padding: 80px 30px;
+    text-align: justify;
+  }
+  .about-div {
+    flex-direction: column;
+    /* gap: 25px; */
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .about-div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 750px) {
+  .about-div {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
