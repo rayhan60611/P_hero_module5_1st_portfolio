@@ -7,6 +7,9 @@
   user-select: none; /* Standard syntax */
 }
 .header {
+  width: 100vw;
+
+  overflow-x: hidden;
   background: #fff8f3;
   background-image: url(../images/header_bg.png), url(../images/developer.png);
   background-repeat: no-repeat;
@@ -314,9 +317,6 @@ textarea::placeholder {
 
 /* hide class */
 
-.hide {
-  display: none;
-}
 /* what i do media query */
 @media screen and (max-width: 576px) {
   .card-container {
@@ -476,7 +476,6 @@ textarea::placeholder {
     height: 500px;
     width: 100%;
     margin-top: 20px;
-    margin-bottom: -20px;
   }
 
   .banner-h2 {
@@ -500,11 +499,94 @@ textarea::placeholder {
     color: #757575;
     /* width: 580px; */
     margin-bottom: 25px;
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1030px) {
+  .navbar {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .nav-title {
+    font-weight: 800;
+    font-size: 60px;
   }
 
-  /* main section */
-  main {
-    max-width: 940px;
-    margin: 0 auto;
+  ul {
+    /* flex-direction: column; */
+    gap: 25px;
+    /* justify-content: center; */
+
+    align-items: center;
+  }
+  ul li {
+    list-style: none;
+    /* margin-left: 50px; */
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: #474747;
+    font-size: 16px;
+  }
+
+  .btn-hire-me {
+    font-size: 12px !important;
+    width: max-content;
+    /* padding: 0 0; */
+    /* padding: 12px 30px; */
+  }
+  .banner-btn-container {
+    display: flex;
+  }
+  .btn-primary {
+    font-size: 13px;
+  }
+
+  .btn-secondary {
+    font-size: 13px;
+  }
+
+  .btn-contact-me {
+    margin-left: 15px;
+  }
+
+  /* banner styles */
+  .banner-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px;
+  }
+
+  .img-rayhan {
+    height: 500px;
+    width: fit-content;
+    margin-top: 20px;
+  }
+
+  .banner-h2 {
+    color: #474747;
+    font-weight: 600;
+    font-size: 28px;
+  }
+
+  .banner-h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #181818;
+    margin-bottom: 10px;
+  }
+
+  .banner-p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #757575;
+    /* width: 580px; */
+    margin-bottom: 25px;
+    text-align: justify;
   }
 }
